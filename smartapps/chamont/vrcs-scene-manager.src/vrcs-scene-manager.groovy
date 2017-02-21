@@ -20,11 +20,11 @@
 definition(
         name: "VRCS Button Controller",
         namespace: "smartthings",
-        author: "Brian Dahlem",
+        author: "Monty Charlton",
         description: "Control devices with buttons like Leviton VRCS4",
         category: "Convenience",
-        iconUrl: "https://s3.amazonaws.com/smartapp-icons/MyApps/Cat-MyApps.png",
-        iconX2Url: "https://s3.amazonaws.com/smartapp-icons/MyApps/Cat-MyApps@2x.png"
+        iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/App-LightUpMyWorld.png",
+        iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/App-LightUpMyWorld@2x.png"
 )
 
 preferences {

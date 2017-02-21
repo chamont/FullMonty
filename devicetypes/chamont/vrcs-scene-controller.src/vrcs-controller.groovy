@@ -19,7 +19,7 @@
  */
 
  metadata {
-	definition (name: "VRCS Scene Control", namespace: "FullMonty", author: "Monty Charlton") {
+	definition (name: "VRCS Control Panel", namespace: "FullMonty", author: "Monty Charlton") {
 		capability "Actuator"
         capability "Button"
         capability "Configuration"
@@ -140,7 +140,7 @@ def zwaveEvent(physicalgraph.zwave.commands.sceneactuatorconfv1.SceneActuatorCon
 }
 
 
-// Configuration Reports are replys to configuration value requests... If we knew what configuration parameters
+// Configuration Reports are replies to configuration value requests... If we knew what configuration parameters
 // to request this could be very helpful.
 def zwaveEvent(physicalgraph.zwave.commands.configurationv1.ConfigurationReport cmd) {
 	createEvent([:])
@@ -279,8 +279,6 @@ def getDataByName(String name) {
 	state[name] ?: device.getDataValue(name)
 }
 
-//Stupid conversions
-
 // convert a double to an integer
 def integer(double v) {
 	return v.toInteger()
@@ -291,7 +289,7 @@ def integerhex(String v) {
 	if (v == null) {
     	return 0
     }
-    
+
 	return Integer.parseInt(v, 16)
 }
 
@@ -300,6 +298,6 @@ def integer(String v) {
 	if (v == null) {
     	return 0
     }
-    
+
 	return Integer.parseInt(v)
 }
