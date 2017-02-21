@@ -19,7 +19,7 @@
  */
 definition(
         name: "VRCS Button Controller",
-        namespace: "smartthings",
+        namespace: "FullMonty",
         author: "Monty Charlton",
         description: "Control devices with buttons like Leviton VRCS4",
         category: "Convenience",
